@@ -1,10 +1,14 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
 
 class Home extends React.Component {
     render() {
         return (
             <div>
-            this is home
+              <p><FormattedMessage
+                id="Home.dayMessage"
+                defaultMessage="Home... It's a beautiful day outside."
+              /></p>
             </div>
             );
     }
